@@ -1,0 +1,40 @@
+# This program will decide if the user can eat ice cream
+# or if they need to go to the gym
+# By using a function
+
+
+# Results changed to a function
+def enjoy():
+    print("Enjoy your ice cream!")
+
+
+def life_too_short():
+    print("Don't worry about it, life is too short!")
+
+
+def go_to_gym():
+    print("Forget about it! Go to the GYM!")
+
+
+iceCream_flavors = ['chocolate', 'vanilla', 'strawberry']
+
+# Questions for the user
+exercise = int(input("How many minutes did you workout today?"))
+calDeficit = int(input("How much is your calorie deficit?"))
+sweets = (input("Have you had any sweets today? "))
+extremeHot = (input("Is it extremely hot outside?"))
+time = (input("Is it past noon?"))
+
+# Determine outcome for user
+if(exercise >= 30) and (calDeficit > 500) and (sweets == 'no'):
+    enjoy()
+    print("What flavor of ice cream would you like?")
+
+elif (time == 'yes') and (extremeHot == 'yes'):
+    life_too_short()
+
+else:
+    go_to_gym()
+
+
+
